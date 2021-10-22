@@ -1,0 +1,27 @@
+### Implementation of the Minimax algorithm on tic tac toe
+
+game_board = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
+
+
+
+#function to find the best possible move given the current game board
+def best_move(board):
+    #implementation can utilize minimax
+    return None
+
+def minimax(board, depth, isMaximizer):
+    if isEndGame():
+        return board
+    elif isMaximizer:
+        #determine current value
+        #determine whether another choice is better
+        #recurse
+        #return better choice
+    else:
+        #recurse to 1 higher depth
+
+#determines whether the game has reached the end game state
+#based on # of remaining unfilled squares and also whether a
+#winning state has been reached.
+def isEndGame():
+    return None
