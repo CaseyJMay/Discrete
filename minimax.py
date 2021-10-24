@@ -40,11 +40,6 @@ def evaluator(board):
     else:
         return 0
 
-#function to find the best possible move given the current game board
-def best_move(board):
-    #implementation can utilize minimax
-    return None
-
 def minimax(board, depth, player):
     score = evaluator(board) * (9-depth)
 
@@ -95,7 +90,7 @@ def find_best_move(board):
 def render(board):
     """
     Print the board on console
-    :param state: current state of the board
+    Board: current state of the board
     """
 
     chars = {
@@ -107,8 +102,8 @@ def render(board):
 
     print('\n' + str_line)
     for row in board:
-        for cell in row:
-            symbol = chars[cell]
+        for item in row:
+            symbol = chars[item]
             print(f'| {symbol} |', end='')
         print('\n' + str_line)
 
